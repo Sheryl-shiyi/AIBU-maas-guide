@@ -44,6 +44,8 @@ Each entry links to its pull request for full details.
 
 === Fixes
 
+* *UWM No Longer Required in RHOAI 3.5* - Marked User Workload Monitoring as optional in Phase 2. RHOAI 3.5 uses COO's MonitoringStack for metrics collection. UWM is still useful for forwarding metrics to external tools. (link:{repo-url}/pull/167[#167])
+
 * *Phase 4 CRD Race Condition* - DSC triggers async CRD registration. Script was applying HardwareProfile before CRD existed. Added wait_for_crd() helper. (link:{repo-url}/pull/108[#108])
 
 * *OGX Rename for RHOAI 3.5* - RHOAI 3.5 renamed llamastackoperator to ogx. Old key was silently ignored, blocking Playground from appearing. (link:{repo-url}/pull/110[#110])
